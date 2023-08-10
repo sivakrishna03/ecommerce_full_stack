@@ -1,0 +1,11 @@
+
+.loginlogo{
+    height: 150px;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.login-container{
+    height: 90%;
+    padding-top: 80px;
+}
