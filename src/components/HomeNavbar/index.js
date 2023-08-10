@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './index.css';
 import { VscThreeBars } from "react-icons/vsc";
 
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 const navlist_data = [
@@ -55,8 +55,6 @@ const HomeNavbar = () => {
                 />
                 <ul className='navulist'>
                     {tabs.map((eachItem, index) => (
-                        <NavLink key={index} to={eachItem.path}>{eachItem.id}</NavLink>,
-
                         <li
                             className={`listitems ${eachItem.isActive ? 'active' : ''}`}
                             id={eachItem.id}
@@ -65,6 +63,8 @@ const HomeNavbar = () => {
                         >
 
                             {eachItem.list}
+                            {/* Not Working */}
+                            {/* <Link to={eachItem.path}>{eachItem.list}</Link> */}
 
                             {/* {eachItem.list} */}
                         </li>
